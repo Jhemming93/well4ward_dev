@@ -1,12 +1,6 @@
-// import Button from "@/components/Button_Basic";
-// import { useRouter } from "next/navigation";
-
-import Card_Project from "@/components/Card_Project";
+import Card_Project from "@/components/cards/Card_Project";
 
 export default function Road_Map() {
-  //   const router = useRouter();
-  //   const btnLink = "/road_map";
-  //   console.log(cards);
   return (
     <>
       <section className="bg-gray-100">
