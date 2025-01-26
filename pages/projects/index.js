@@ -1,17 +1,12 @@
+import Card_Page_Title from "@/components/cards/Card_Main_Page_Title";
 import Card_Project from "@/components/cards/Card_Project";
 
-export default function Road_Map() {
+export default function Projects() {
   return (
     <>
-      <section className="bg-gray-100">
-        <div className="flex items-center justify-center ">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">{data.title}</h1>
-            <p className="text-gray-700 text-lg">{data.description}</p>
-          </div>
-        </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-2">
+      <section>
+        <Card_Page_Title title={data.title} description={data.description} />
+        <div className="flex flex-wrap items-center justify-center gap-2 py-4">
           {cards.map((card, index) => (
             <Card_Project
               key={index}
@@ -32,7 +27,7 @@ export default function Road_Map() {
 const data = {
   title: "Projects",
   description:
-    "Well4Ward is always looking to grow our community. These are our current ongoing projects that we currently working on. If you see any that interest or you just want to help out, get in contact to see how you can help us out.",
+    "Well4Ward is always looking to grow and strengthen our community. Here are the projects we're currently working on. If any spark your interest or you'd like to get involved, don't hesitate to reach out and find out how you can contribute!",
 };
 
 // Card Template

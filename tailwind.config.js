@@ -8,38 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        // blue
-        first: {
-          DEFAULT: "#2ca2c1",
-        },
-        //green
-        second: {
-          DEFAULT: "#345424",
-        },
-        //orange
-        third: {
-          DEFAULT: "#db6b17",
-        },
-        //brown
-        forth: {
-          DEFAULT: "#9a3d31",
-        },
-        //olive
-        fifth: {
-          DEFAULT: "#a8a890",
-        },
-        //light color
-        light: {
-          DEFAULT: "#ffffff",
-        },
-        //dark color
-        dark: {
-          DEFAULT: "#000000",
-        },
-        //gold
-        sixth: {
-          DEFAULT: "#edca60",
-        },
+        tealBlue: "#5FB7D4",
+        darkGreen: "#15633F",
+        brickRed: "#A51E22",
+        brightYellow: "#FFD700",
+        skyBlue: "#C8F0F4",
+        gray: "#E5E5E5",
+        white: "#FFFFFF",
+        nGreen: "#ced2ba",
+        royalPurple: "#4B006E",
       },
     },
   },
