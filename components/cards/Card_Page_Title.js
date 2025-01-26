@@ -1,18 +1,20 @@
-export default function Card_Page_Title({
-  title,
-  subtitle,
-  description,
-  className,
-}) {
+import Title from "../individual/Title";
+
+export default function Card_Page_Title({ title, subtitle, tag, className }) {
   return (
-    <div
-      className={`
-                ["max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md "]
-                     ${className}`}
-    >
-      <h2 className="text-xl font-bold text-gray-800 mb-2">{title}</h2>
-      <h3 className="text-lg font-medium text-gray-600 mb-4">{subtitle}</h3>
-      <p className="text-gray-700">{description}</p>
+    <div className={`${styles.card} ${className}`}>
+      <div className="w-full mb-4">
+        <Title as={tag} children={title} className={styles.title} />
+        <div className={styles.underline}></div>
+      </div>
+      <p className={styles.subtitle}>{subtitle}</p>
     </div>
   );
 }
+
+const styles = {
+  card: "w-full",
+  title: "text-4xl font-bold text-black",
+  subtitle: "text-lg md:text-xl",
+  underline: "w-size-75 h-2 bg-brightYellow rounded-full",
+};

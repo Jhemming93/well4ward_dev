@@ -1,5 +1,5 @@
 import Button_Solid from "@/components/buttons/Button_Solid";
-import Card_Page_Title from "@/components/cards/Card_Page_Title";
+import Card_Page_Title from "@/components/cards/Card_Main_Page_Title";
 import { useState } from "react";
 import Contact from "./Contact_Info";
 import Contact_Info from "./Contact_Info";
@@ -50,8 +50,13 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-max bg-first items-center flex flex-col justify-center p-6">
-      <div className="py-4">
+    <div className="min-h-max bg-first items-center flex flex-col justify-center p-6 ">
+      <Card_Page_Title
+        title="Contact Us"
+        description=" We'd love to hear from you! Whether you have questions, feedback, or
+        just want to say hello, feel free to reach out to us."
+      />
+      <div className="py-4 w-full">
         <Contact_Info />
       </div>
 

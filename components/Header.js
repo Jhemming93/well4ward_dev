@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center p-4">
+      <div className="mx-auto max-w-5xl px-4 flex justify-between items-center p-4">
         <div className="text-2xl font-bold">
           <Link href="/" className="flex max-w-16  ">
             <Image
@@ -66,28 +66,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-
-            {/* <Link
-              href="/"
-              className="block text-gray-700 hover:text-gray-900"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              href="/our_story"
-              className="block text-gray-700 hover:text-gray-900"
-              onClick={() => setIsOpen(false)}
-            >
-              Our Story
-            </Link>
-            <Link
-              href="/contact"
-              className="block text-gray-700 hover:text-gray-900"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </Link> */}
           </div>
         </div>
       )}

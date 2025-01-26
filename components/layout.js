@@ -13,8 +13,15 @@ export default function Layout({ children }) {
         }}
         backgroundImage={"/imgs/edmonton_skyline.webp"}
       />
-      <main>{children}</main>
+      <main className={styles.main}>
+        <section className={styles.section}>{children}</section>
+      </main>
       <Footer />
     </>
   );
 }
+
+const styles = {
+  main: "bg-nGreen py-6",
+  section: "mx-auto w-full max-w-5xl px-4 ",
+};

@@ -8,24 +8,24 @@ export default function Card_Project({
 }) {
   const coreColors = {
     autonomy: {
-      cardTop: "border-sixth",
-      progress: "bg-sixth",
+      cardTop: "border-skyBlue",
+      progress: "bg-skyBlue",
     },
     equality: {
-      cardTop: "border-fourth",
-      progress: "bg-fourth",
+      cardTop: "border-brightYellow",
+      progress: "bg-brightYellow",
     },
     community: {
-      cardTop: "border-third",
-      progress: "bg-third",
+      cardTop: "border-brickRed",
+      progress: "bg-brickRed",
     },
     growth: {
-      cardTop: "border-second",
-      progress: "bg-second",
+      cardTop: "border-darkGreen",
+      progress: "bg-darkGreen",
     },
     stewardship: {
-      cardTop: "border-first",
-      progress: "bg-first",
+      cardTop: "border-tealBlue",
+      progress: "bg-tealBlue",
     },
   };
   const styles = {
@@ -44,7 +44,7 @@ export default function Card_Project({
 
       {/* Dates */}
       <div className="mt-4">
-        <div className="flex justify-between text-sm text-gray-500">
+        <div className="flex justify-between text-sm text-black">
           <div>
             <p className="font-bold">Started: </p>
             <p>{dateStarted}</p>
@@ -58,7 +58,7 @@ export default function Card_Project({
 
       {/* Progress Bar */}
       <div className="mt-4">
-        <div className="h-2 bg-gray-200 rounded-full">
+        <div className="h-2 bg-gray rounded-full">
           <div
             className={`${styles.progress} ${coreColors[coreColor]?.progress}`}
             style={{ width: `${progress}%` }}
