@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center py-2 bg-white border border-gray rounded-lg shadow-md p-6">
       <div className="text-center">
-        <h1 className="text-4xl lg:text-5xl font-bold mb-4">{data.title}</h1>
+        <h1 className="text-4xl lg:text-5xl font-bold uppercase mb-4">
+          {data.title}
+        </h1>
         <p className={styles.p}>{data.mission}</p>
         <ResponsiveImage
           src={"/imgs/home/neighborhood_1024.webp"}
@@ -31,5 +33,5 @@ const data = {
 };
 
 const styles = {
-  p: "text-gray-700 text-lg lg:text-2xl py-2 mb-4",
+  p: " text-lg lg:text-2xl py-2 mb-4",
 };

@@ -8,15 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        tealBlue: "#5FB7D4",
-        darkGreen: "#15633F",
-        brickRed: "#A51E22",
+        tealBlue: "#2ca3c2",
+        darkGreen: "#345424",
+        brickRed: "#852c35",
         brightYellow: "#FFD700",
-        skyBlue: "#C8F0F4",
+        earthyOrange: "#db6c18",
         gray: "#E5E5E5",
         white: "#FFFFFF",
-        nGreen: "#ced2ba",
-        royalPurple: "#4B006E",
+        nGreen: "#485b55",
       },
     },
   },
