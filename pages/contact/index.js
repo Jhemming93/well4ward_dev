@@ -59,7 +59,6 @@ export default function ContactPage() {
       <div className="py-4 w-full">
         <Contact_Info />
       </div>
-
       <form
         className="w-full max-w-lg bg-white rounded-lg shadow-lg p-6"
         onSubmit={handleSubmit}
