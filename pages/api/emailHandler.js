@@ -31,8 +31,15 @@ export default async function emailHandler(req, res) {
 
       return res.status(200).json({ message: "Email sent successfully!" });
     } catch (error) {
-      console.error("Error sending email:", error);
-      return res.status(500).json({ error: "Failed to send email." });
+      console.error(
+        "Error sending email:",
+        error.message,
+        error.stack,
+        error.response
+      );
+      return res
+        .status(500)
+        .json({ error: "Failed to send email.", details: error.message });
     }
   } else {
     return res.status(405).json({ error: "Method not allowed." });
