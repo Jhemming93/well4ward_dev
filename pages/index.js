@@ -1,11 +1,18 @@
 import Button from "@/components/buttons/Button_Basic";
+import ResponsiveImage from "@/components/parts/Responsive_image";
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center py-2">
+    <div className="flex items-center justify-center py-2 bg-white border border-gray rounded-lg shadow-md p-6">
       <div className="text-center">
         <h1 className="text-4xl lg:text-5xl font-bold mb-4">{data.title}</h1>
         <p className={styles.p}>{data.mission}</p>
+        <ResponsiveImage
+          src={"/imgs/home/neighborhood_1024.webp"}
+          alt="The NeighborHood"
+          w={1024}
+          h={1024}
+        />
         <p className={styles.p}>{data.action}</p>
         <Button title={data.btnName} link={data.btnLink} />
       </div>
