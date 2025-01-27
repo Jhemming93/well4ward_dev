@@ -67,16 +67,16 @@ const pageTitles = {
     className: "mb-4",
   },
   idea: {
-    title: "The Idea of Well4ward",
+    title: "The Idea of Well4Ward",
     subtitle:
-      "Well4ward was born out of the desire to create a space where people feel empowered to grow, connect, and thrive. We believe in supporting holistic well-being through innovation, collaboration, and a shared commitment to positive change.",
+      "Well4ward was an idea born from hardship and experiencing the lack of infrastructure to support all of society equitably. These experiences led to a vision of shared social infrastructure that is accessible to anyone who shares the vision and wishes to contribute. We believe all people have value to add to their communities, and what is lacking is infrastructure to connect people to the resources and communities they need to lead happy, productive lives. In our fast paced world where corporate profits often are centre stage, we see the possibility of a world centered on people and creating spaces for them to connect, grow and share in building a strong, resilient society for the benefit of all.7",
     tag: "h3",
-    className: "md:self-center",
+    className: "pb-4 md:pb-0 md:self-center",
   },
   mission: {
     title: "Mission Statement",
     subtitle:
-      "Our mission is to foster well-being by building a supportive community that promotes autonomy, equality, and growth. Through sustainable practices and mindful stewardship, we strive to create a meaningful impact for individuals and society.",
+      "Our mission is to foster well-being by building supportive community owned infrastructure that promotes autonomy, equality, and growth. Through sustainable practices and mindful stewardship, we strive to create a meaningful impact for individuals and society.",
     tag: "h3",
     className: "md:self-center",
   },

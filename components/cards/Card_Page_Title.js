@@ -14,7 +14,7 @@ export default function Card_Page_Title({ title, subtitle, tag, className }) {
 
 const styles = {
   card: "w-full",
-  title: "text-4xl font-bold text-black",
+  title: "text-3xl font-bold text-black md:text-4xl",
   subtitle: "text-lg md:text-xl",
   underline: "w-size-75 h-2 bg-brightYellow rounded-full",
 };

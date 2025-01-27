@@ -8,7 +8,7 @@ export default function Layout({ children }) {
       <Header />
       <Banner
         overlayText={{
-          title: "Co-op Reform Initiative",
+          title: "Cooperative Reform Initiative",
           subtitle: "Autonomy | Equality | Community | Growth | Stewardship",
         }}
         backgroundImage={"/imgs/edmonton_skyline.webp"}
