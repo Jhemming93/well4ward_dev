@@ -1,4 +1,4 @@
-import Title from "../individual/Title";
+import Title from "../parts/Title";
 
 export default function Card_Main_Page_Title({
   title,
