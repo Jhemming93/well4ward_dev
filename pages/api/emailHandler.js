@@ -26,7 +26,7 @@ export default async function emailHandler(req, res) {
         text: `Name: ${name}\nEmail: ${email}\nCategory: ${category}\nMessage: ${message}`,
       };
 
-      // Send the email
+      // Send the emai
       await transporter.sendMail(mailOptions);
 
       return res.status(200).json({ message: "Email sent successfully!" });
