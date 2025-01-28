@@ -33,7 +33,7 @@ const Header = () => {
             ))}
           </div>
           <button
-            className="md:hidden text-gray-700 hover:text-gray-900 focus:outline-none"
+            className="md:hidden text-black hover:text-darkGreen focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
             <svg
@@ -94,8 +94,10 @@ const menuItems = [
 
 const styles = {
   link: {
-    desktop: { class: "text-gray-700 hover:text-gray-900" },
-    mobile: { class: "block text-gray-700 hover:text-gray-900" },
+    desktop: {
+      class: "text-darkGreen p-1 rounded-full font-bold hover:bg-brightYellow ",
+    },
+    mobile: { class: "block text-darkGreen font-bold p-1" },
   },
 };
 
