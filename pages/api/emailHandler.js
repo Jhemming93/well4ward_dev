@@ -1,47 +1,44 @@
 import nodemailer from "nodemailer";
 
 export default async function emailHandler(req, res) {
-  if (req.method === "POST") {
-    const { name, email, subject, category, message } = req.body;
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method not allowed" });
+  }
 
-    if (!name || !email || !subject || !category || !message) {
-      return res.status(400).json({ error: "All fields are required." });
-    }
+  const { name, email, subject, category, message } = req.body;
 
-    try {
-      // Configure the nodemailer transporter
-      const transporter = nodemailer.createTransport({
-        service: "Gmail", // Use your preferred email service
-        auth: {
-          user: process.env.EMAIL_USER, // Set in your environment variables
-          pass: process.env.EMAIL_PASS, // Set in your environment variables
-        },
-      });
+  // Validate the request body
+  if (!name || !email || !subject || !category || !message) {
+    return res.status(400).json({ error: "All fields are required." });
+  }
 
-      // Email options
-      const mailOptions = {
-        from: email,
-        to: "well4wardsetup@gmail.com",
-        subject: `New Contact Form Submission: ${subject}`,
-        text: `Name: ${name}\nEmail: ${email}\nCategory: ${category}\nMessage: ${message}`,
-      };
+  try {
+    // Create a Nodemailer transporter
+    const transporter = nodemailer.createTransport({
+      service: "Gmail", // Using Gmail's SMTP service
+      auth: {
+        user: process.env.EMAIL_USER, // Your email address from environment variables
+        pass: process.env.EMAIL_PASS, // Your email password or app-specific password
+      },
+    });
 
-      // Send the email
-      await transporter.sendMail(mailOptions);
+    // Define email options
+    const mailOptions = {
+      from: process.env.EMAIL_USER, // The sender (your email)
+      to: process.env.RECEIVER_EMAIL || "well4wardsetup@gmail.com", // The receiver
+      subject: `New Contact Form Submission: ${subject}`,
+      text: `Name: ${name}\nEmail: ${email}\nCategory: ${category}\nMessage: ${message}`,
+    };
 
-      return res.status(200).json({ message: "Email sent successfully!" });
-    } catch (error) {
-      console.error(
-        "Error sending email:",
-        error.message,
-        error.stack,
-        error.response
-      );
-      return res
-        .status(500)
-        .json({ error: "Failed to send email.", details: error.message });
-    }
-  } else {
-    return res.status(405).json({ error: "Method not allowed." });
+    // Send the email
+    const info = await transporter.sendMail(mailOptions);
+    console.log("Email sent successfully:", info);
+
+    return res.status(200).json({ message: "Email sent successfully!" });
+  } catch (error) {
+    console.error("Error sending email:", error.message, error.stack);
+    return res
+      .status(500)
+      .json({ error: "Failed to send email.", details: error.message });
   }
 }

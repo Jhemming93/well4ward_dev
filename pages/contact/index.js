@@ -12,7 +12,7 @@ export default function ContactPage() {
     category: "",
     message: "",
   });
-
+  const [responseMessage, setResponseMessage] = useState("");
   const categories = ["General Inquiry", "Support", "Feedback", "Other"];
 
   const handleChange = (e) => {
@@ -28,24 +28,20 @@ export default function ContactPage() {
         headers: {
           "Content-Type": "application/json",
         },
+
         body: JSON.stringify(formData),
       });
-
+      console.log(response);
+      const data = await response.json();
       if (response.ok) {
-        alert("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          category: "",
-          message: "",
-        });
+        setResponseMessage("Email sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        alert("Failed to send the message. Please try again.");
+        setResponseMessage(data.error || "Something went wrong.");
       }
     } catch (error) {
-      console.error("Error sending message:", error);
-      alert("An error occurred. Please try again later.");
+      console.error("Error:", error);
+      setResponseMessage("An error occurred. Please try again.");
     }
   };
 
@@ -143,6 +139,7 @@ export default function ContactPage() {
           />
         </div>
         <Button_Solid children="Send" type="submit" />
+        {responseMessage && <p>{responseMessage}</p>}
       </form>
     </div>
   );
