@@ -1,7 +1,6 @@
 import Button_Solid from "@/components/buttons/Button_Solid";
 import Card_Page_Title from "@/components/cards/Card_Main_Page_Title";
 import { useState } from "react";
-import Contact from "./Contact_Info";
 import Contact_Info from "./Contact_Info";
 
 export default function ContactPage() {
@@ -23,7 +22,7 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/emailHandler", {
+      const response = await fetch("/netlify/functions/emailHandler", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
