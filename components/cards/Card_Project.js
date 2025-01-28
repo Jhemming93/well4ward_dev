@@ -8,8 +8,8 @@ export default function Card_Project({
 }) {
   const coreColors = {
     autonomy: {
-      cardTop: "border-skyBlue",
-      progress: "bg-skyBlue",
+      cardTop: "border-earthyOrange",
+      progress: "bg-earthyOrange",
     },
     equality: {
       cardTop: "border-brightYellow",
