@@ -22,7 +22,7 @@ export default function ContactPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/netlify/functions/emailHandler", {
+      const response = await fetch("/api/emailHandler", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
