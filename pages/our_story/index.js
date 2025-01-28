@@ -69,7 +69,7 @@ const pageTitles = {
   idea: {
     title: "The Idea of Well4Ward",
     subtitle:
-      "Well4ward was an idea born from hardship and experiencing the lack of infrastructure to support all of society equitably. These experiences led to a vision of shared social infrastructure that is accessible to anyone who shares the vision and wishes to contribute. We believe all people have value to add to their communities, and what is lacking is infrastructure to connect people to the resources and communities they need to lead happy, productive lives. In our fast paced world where corporate profits often are centre stage, we see the possibility of a world centered on people and creating spaces for them to connect, grow and share in building a strong, resilient society for the benefit of all.7",
+      "Well4ward was an idea born from hardship and experiencing the lack of infrastructure to support all of society equitably. These experiences led to a vision of shared social infrastructure that is accessible to anyone who shares the vision and wishes to contribute. We believe all people have value to add to their communities, and what is lacking is infrastructure to connect people to the resources and communities they need to lead happy, productive lives. In our fast paced world where corporate profits often are centre stage, we see the possibility of a world centered on people and creating spaces for them to connect, grow and share in building a strong, resilient society for the benefit of all.",
     tag: "h3",
     className: "pb-4 md:pb-0 md:self-center",
   },
