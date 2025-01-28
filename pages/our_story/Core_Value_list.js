@@ -4,9 +4,10 @@ import Card_Page_Title from "@/components/cards/Card_Page_Title";
 const coreValues = [
   {
     name: "Autonomy",
-    description: "Empowering individuals to make their own decisions.",
-    bgColor: "bg-royalPurple",
-    fColor: "text-royalPurple",
+    description:
+      "Empowering individuals to determine their own place in their communities.",
+    bgColor: "bg-earthyOrange",
+    fColor: "text-earthyOrange",
   },
   {
     name: "Equality",
@@ -22,13 +23,14 @@ const coreValues = [
   },
   {
     name: "Growth",
-    description: "Fostering personal and collective development.",
+    description:
+      "Promoting development and interconnection for all generations.",
     bgColor: "bg-darkGreen",
     fColor: "text-darkGreen",
   },
   {
     name: "Stewardship",
-    description: "Responsibly managing resources for future generations.",
+    description: "Responsibly managing resources for a sustainable future.",
     bgColor: "bg-tealBlue",
     fColor: "text-tealBlue",
   },
@@ -60,7 +62,7 @@ export default function CoreValuesList() {
         </div>
 
         {/* Value Description */}
-        <div className="flex-1 flex bg-nGreen p-6 rounded-lg shadow-md justify-center text-5xl font-bold text-white text-center w-full">
+        <div className="flex-1 flex bg-gray p-6 rounded-lg shadow-md justify-center text-5xl font-bold text-white text-center w-full">
           {activeValue ? (
             <div className="self-center">
               <p className={activeValue.fColor}>{activeValue.description}</p>

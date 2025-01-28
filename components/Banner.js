@@ -8,9 +8,9 @@ const Banner = ({ backgroundImage, overlayText }) => {
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
         <div className="text-center text-white">
-          <h1 className="text-2xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-5xl uppercase font-bold">
             {overlayText.title}
-          </h1>
+          </h2>
           <p className="mt-2 text-sm md:text-lg">{overlayText.subtitle}</p>
         </div>
       </div>
