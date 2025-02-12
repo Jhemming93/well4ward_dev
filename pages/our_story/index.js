@@ -74,7 +74,7 @@ const pageTitles = {
     className: "pb-4 md:pb-0 md:self-center",
   },
   mission: {
-    title: "Mission Statement",
+    title: "Our Mission",
     subtitle:
       "Our mission is to foster well-being by building supportive community owned infrastructure that promotes autonomy, equality, and growth. Through sustainable practices and mindful stewardship, we strive to create a meaningful impact for individuals and society.",
     tag: "h3",
