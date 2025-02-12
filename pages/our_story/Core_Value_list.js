@@ -62,14 +62,14 @@ export default function CoreValuesList() {
         </div>
 
         {/* Value Description */}
-        <div className="flex-1 flex bg-gray p-6 rounded-lg shadow-md justify-center text-5xl font-bold text-white text-center w-full">
+        <div className="flex-1 flex bg-blue-200 p-6 rounded-lg shadow-md justify-center text-5xl font-bold text-white text-center w-full">
           {activeValue ? (
             <div className="self-center">
-              <p className={activeValue.fColor}>{activeValue.description}</p>
+              <p className={`${activeValue.fColor} text-3xl`}>{activeValue.description}</p>
             </div>
           ) : (
             <div className="self-center ">
-              <p className="text-gray-500">
+              <p className="text-gray-500 text-3xl">
                 Hover over a value to see its details.
               </p>
             </div>
