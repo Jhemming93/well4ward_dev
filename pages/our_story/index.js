@@ -5,6 +5,12 @@ import Responsive_image from "@/components/parts/Responsive_image";
 import React from "react";
 import CoreValuesList from "./Core_Value_list";
 
+export const metadata = {
+  title: {absolute:'Our Story'},
+  description: 'The store of where Well4Ward began and the values that it holds.'
+
+}
+
 const Our_Story = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800">
