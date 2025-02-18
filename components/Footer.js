@@ -17,7 +17,7 @@ const Footer = () => {
           </Link>
         </div>
         <p className="text-center mt-4 text-gray-400">
-          &copy; {new Date().getFullYear()} My Website. All rights reserved.
+          &copy; {new Date().getFullYear()} Well4Ward. All rights reserved.
         </p>
       </div>
     </footer>

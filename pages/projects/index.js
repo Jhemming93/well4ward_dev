@@ -1,6 +1,15 @@
+"use server"
 import Card_Main_Page_Title from "@/components/cards/Card_Main_Page_Title";
 import Card_Page_Title from "@/components/cards/Card_Page_Title";
 import Card_Project from "@/components/cards/Card_Project";
+
+export const metadata = {
+  title: 'Well4Ward Projects',
+  description: 'Well4Wards current ongoing projects, aswell as future planned projects'
+
+}
+
+
 
 export default function Projects() {
   return (
